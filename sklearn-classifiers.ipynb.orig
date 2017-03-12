@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 22,
+   "execution_count": 43,
    "metadata": {
     "collapsed": false
    },
@@ -18,29 +18,15 @@
     "from sklearn.svm import SVC\n",
     "from sklearn.ensemble import RandomForestClassifier\n",
     "from sklearn.neighbors import KNeighborsClassifier\n",
-    "from sklearn.naive_bayes import BernoulliNB\n",
-    "from sklearn.naive_bayes import MultinomialNB\n",
-    "from sklearn.neural_network import MLPClassifier\n",
-    "from sklearn.gaussian_process import GaussianProcessClassifier\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": [
+    "\n",
     "# import data from csv\n",
     "dataframe = pandas.read_csv('heart.csv',usecols = range(0,14), engine='python')\n",
-    "dataset = dataframe.values"
+    "dataset = dataframe.values\n"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 2,
    "metadata": {
     "collapsed": true
    },
@@ -59,7 +45,11 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
+<<<<<<< HEAD
+   "execution_count": 3,
+=======
+   "execution_count": 45,
+>>>>>>> cb4b7dbc4d1e1225325949d81113a8a3e12525e9
    "metadata": {
     "collapsed": false
    },
@@ -147,7 +137,11 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+<<<<<<< HEAD
+   "execution_count": 4,
+=======
+   "execution_count": 58,
+>>>>>>> cb4b7dbc4d1e1225325949d81113a8a3e12525e9
    "metadata": {
     "collapsed": false
    },
@@ -156,26 +150,70 @@
     "# method to build classifier\n",
     "def buildClf(train_data, train_target):\n",
     "#     clf = DecisionTreeClassifier()\n",
-    "#     clf = GaussianNB()\n",
+    "    clf = GaussianNB()\n",
     "#     clf = LogisticRegression()\n",
     "#     clf = SVC()\n",
     "#     clf = RandomForestClassifier()\n",
     "#     clf = KNeighborsClassifier()\n",
+<<<<<<< HEAD
     "#     clf = MultinomialNB()\n",
     "#     clf = BernoulliNB()\n",
-    "    clf = GaussianProcessClassifier()\n",
-    "#     clf = MLPClassifier()\n",
+=======
+>>>>>>> cb4b7dbc4d1e1225325949d81113a8a3e12525e9
     "    clf.fit(train_data, train_target)\n",
     "    return clf"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+<<<<<<< HEAD
+   "execution_count": 5,
+=======
+   "execution_count": 59,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "# shuffle dataset\n",
+    "np.random.shuffle(dataset)\n",
+    "\n",
+    "# divide data (X) and targets (Y)\n",
+    "X = np.delete(dataset, obj=13, axis=1)\n",
+    "Y = dataset[:,13]\n",
+    "\n",
+    "# normalize data (X)\n",
+    "X = sklearn.preprocessing.normalize(X, norm='max', axis=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+>>>>>>> cb4b7dbc4d1e1225325949d81113a8a3e12525e9
    "metadata": {
     "collapsed": false
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+<<<<<<< HEAD
+      "Split by % Accuracy: 88.8888888889%\n",
+      "K-Fold Accuracy: 83.7037037037%\n",
+=======
+      "-----Train-----\n",
+      "Split by % Accuracy: 89.417989418%\n",
+      "K-Fold Accuracy: 85.5967078189%\n",
+      "Leave-One-Out Accuracy: 85.9066501446%\n",
+      "-----Test-----\n",
+      "Split by % Accuracy: 76.5432098765%\n",
+      "K-Fold Accuracy: 85.1851851852%\n",
+>>>>>>> cb4b7dbc4d1e1225325949d81113a8a3e12525e9
+      "Leave-One-Out Accuracy: 83.7037037037%\n"
+     ]
+    }
+   ],
    "source": [
     "splitByPercentage_train, splitByPercentage_test = splitByPercentageValidation(0.7)\n",
     "kFold_train, kFold_test = kFoldValidation(10)\n",
