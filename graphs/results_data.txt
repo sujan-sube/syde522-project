@@ -1,0 +1,102 @@
+--------------------------
+Dataset: heart_full.csv
+--------------------------
+
+Gaussien Naive Bayes
+
+-----Train-----
+Split by % Accuracy: 0.831288343558
+K-Fold Accuracy: 0.833326282838
+Leave-One-Out Accuracy: 0.827492656658
+-----Test-----
+Split by % Accuracy: 0.793103448276
+K-Fold Accuracy: 0.822829801777
+Leave-One-Out Accuracy: 0.8203125
+
+Multinomial Naive Bayes
+
+-----Train-----
+Split by % Accuracy: 0.573619631902
+K-Fold Accuracy: 0.552087651762
+Leave-One-Out Accuracy: 0.552083333333
+-----Test-----
+Split by % Accuracy: 0.431034482759
+K-Fold Accuracy: 0.552153110048
+Leave-One-Out Accuracy: 0.552083333333	
+
+Bernoulli Naive Bayes
+
+-----Train-----
+Split by % Accuracy: 0.791411042945
+K-Fold Accuracy: 0.796230805026
+Leave-One-Out Accuracy: 0.7950323651
+-----Test-----
+Split by % Accuracy: 0.741379310345
+K-Fold Accuracy: 0.789234449761
+Leave-One-Out Accuracy: 0.794270833333
+
+Guassian Process
+
+-----Train-----
+Split by % Accuracy: 0.573619631902
+K-Fold Accuracy: 0.552087651762
+Leave-One-Out Accuracy: 0.552083333333
+-----Test-----
+Split by % Accuracy: 0.431034482759
+K-Fold Accuracy: 0.552153110048
+Leave-One-Out Accuracy: 0.552083333333
+
+Quadratic Descriminant Anlaysis
+
+-----Train-----
+Split by % Accuracy: 0.846625766871
+K-Fold Accuracy: 0.848944540801
+Leave-One-Out Accuracy: 0.84129541993
+-----Test-----
+Split by % Accuracy: 0.810344827586
+K-Fold Accuracy: 0.817669172932
+Leave-One-Out Accuracy: 0.809895833333
+
+SVM
+
+-----Train-----
+Split by % Accuracy: 0.573619631902
+K-Fold Accuracy: 0.552087651762
+Leave-One-Out Accuracy: 0.552083333333
+-----Test-----
+Split by % Accuracy: 0.431034482759
+K-Fold Accuracy: 0.552153110048
+Leave-One-Out Accuracy: 0.552083333333
+
+Bagging with Guassian Naive Bayes
+
+-----Train-----
+Split by % Accuracy: 0.837423312883
+K-Fold Accuracy: 0.815740936588
+Leave-One-Out Accuracy: 0.824378535683
+-----Test-----
+Split by % Accuracy: 0.793103448276
+K-Fold Accuracy: 0.807279562543
+Leave-One-Out Accuracy: 0.802083333333
+
+Bagging with Quadratic Descriminant Analysis
+
+-----Train-----
+Split by % Accuracy: 0.739263803681
+K-Fold Accuracy: 0.735208765176
+Leave-One-Out Accuracy: 0.712467362924
+-----Test-----
+Split by % Accuracy: 0.724137931034
+K-Fold Accuracy: 0.707587149692
+Leave-One-Out Accuracy: 0.7265625
+
+Voting Classifier (GuassianNB, Ada Boost(6), BernoulliNB)
+
+-----Train-----
+Split by % Accuracy: 0.819018404908
+K-Fold Accuracy: 0.824222682855
+Leave-One-Out Accuracy: 0.820802056136
+-----Test-----
+Split by % Accuracy: 0.810344827586
+K-Fold Accuracy: 0.81001367054
+Leave-One-Out Accuracy: 0.815104166667
