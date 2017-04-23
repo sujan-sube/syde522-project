@@ -1,0 +1,10 @@
+Classifier, Train, Test
+Gaussien Naive Bayes, 0.827492656658, 0.8203125
+Multinomial Naive Bayes, 0.552083333333, 0.552083333333
+Bernoulli Naive Bayes, 0.7950323651, 0.7950323651
+Guassian Process, 0.552083333333, 0.552083333333
+Quadratic Descriminant Anlaysis, 0.84129541993, 0.809895833333
+SVM, 0.552083333333, 0.552083333333
+Bagging with Guassian Naive Bayes, 0.824378535683, 0.802083333333
+Bagging with Quadratic Descriminant Analysis, 0.712467362924, 0.7265625
+Voting Classifier (GuassianNB|Ada Boost(6)|BernoulliNB), 0.820802056136, 0.815104166667
