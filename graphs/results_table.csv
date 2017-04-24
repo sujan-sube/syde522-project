@@ -1,10 +1,16 @@
-Classifier, Train, Test
-Gaussien Naive Bayes, 0.827492656658, 0.8203125
-Multinomial Naive Bayes, 0.552083333333, 0.552083333333
-Bernoulli Naive Bayes, 0.7950323651, 0.7950323651
-Guassian Process, 0.552083333333, 0.552083333333
-Quadratic Descriminant Anlaysis, 0.84129541993, 0.809895833333
-SVM, 0.552083333333, 0.552083333333
-Bagging with Guassian Naive Bayes, 0.824378535683, 0.802083333333
-Bagging with Quadratic Descriminant Analysis, 0.712467362924, 0.7265625
-Voting Classifier (GuassianNB|Ada Boost(6)|BernoulliNB), 0.820802056136, 0.815104166667
+Classifier, Train Accuracy, Test Accuracy, Log Loss
+Gaussien Naive Bayes, 0.826207571802, 0.822916666667, 0.640672447461
+Bernoulli Naive Bayes, 0.807597639252, 0.8046875, 0.509444080504
+Guassian Process, 0.994778067885, 0.973958333333, 0.497528931958
+Linear Ddescriminant Analysis, 0.829246899478, 0.825520833333, 0.421624828753
+Quadratic Descriminant Anlaysis, 0.859130221932, 0.809895833333, 0.537143731684
+SVM (rbf), 0.950180863795, 0.888020833333, NA
+SVM (sigmoid), 0.762694462576, 0.7734375, NA
+SVM (linear), 0.825085672324, 0.8203125, NA
+SVM (poly), 0.923289273281, 0.888020833333, NA
+MLP, 1.0, 0.986979166667, 0.287742148599
+Bagging with Guassian Naive Bayes, 0.812635987815, 0.807291666667, 0.461387752509
+Bagging with Quadratic Descriminant Analysis, 0.797357756745, 0.783854166667, NA
+Voting Classifier (GuassianNB|Decision Tree (2f)|BernoulliNB), 1.0, 0.9921875, 0.154569667201
+Voting Classifier (MLP|Decision Tree (2f)|Random Forest), 1.0, 0.9921875, 0.0481008627491
+Hard Voting Classifier (MLP|Decision Tree (2f)|Random Forest), 1.0, 0.989583333333, NA
